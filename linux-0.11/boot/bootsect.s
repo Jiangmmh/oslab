@@ -48,7 +48,7 @@ _start:
 	mov	ds,ax
 	mov	ax,#INITSEG
 	mov	es,ax
-	mov	cx,#256
+	mov	cx,#256         
 	sub	si,si
 	sub	di,di
 	rep
@@ -59,7 +59,7 @@ go:	mov	ax,cs
 	mov	es,ax
 ! put stack at 0x9ff00.
 	mov	ss,ax
-	mov	sp,#0xFF00		! arbitrary value >>512
+	mov	sp, #0xFF00		! arbitrary value >>512
 
 ! load the setup-sectors directly after the bootblock.
 ! Note that 'es' is already set up.

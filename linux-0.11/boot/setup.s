@@ -66,7 +66,6 @@ start:
 	mov	[6],ax		! al = video mode, ah = window width
 
 ! check for EGA/VGA and some config parameters
-
 	mov	ah,#0x12
 	mov	bl,#0x10
 	int	0x10
